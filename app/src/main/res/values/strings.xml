@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Adria test_app</string>
+    <string name="facebook_app_id">426143878466953</string>
+    <string name="fb_login_protocol_scheme">fb426143878466953</string>
+    <string name="about">Adria Business and Technology est un expert dans l’édition et l’intégration des logiciels destinés aux banques et institutions financières. Notre mission est d’accompagner les organisations financières dans leurs projets de digital banking en leur offrant des solutions performantes et des services à haute valeur ajoutée. À travers un fort investissement en recherche et développement, nous veillons à préserver la progression technologique de nos solutions et aider nos clients à faire face aux défis d’aujourd’hui et à s’approprier les défis de demain.</string>
+</resources>

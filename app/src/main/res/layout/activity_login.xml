@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".login"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="116dp"
+        android:src="@drawable/adria_logo"
+        android:transitionName="logo_animation" />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:transitionName="text_animation"
+        android:text="Bonjour Cher"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic"
+        android:transitionName="desc_animation"
+        android:text="Se Connecter Pour Continuer"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="Nom Utilisateur"
+        android:transitionName="username_animation"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Mot de Passe"
+        app:passwordToggleEnabled="true"
+        android:transitionName="password_animation"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="182dp"
+        android:layout_height="63dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/teal_200"
+        android:elevation="0dp"
+        android:text="Mot de Passe oublié ?"
+        android:transitionName="btnFP_animation" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se Connecter"
+        app:backgroundTint="@color/purple_500"
+        android:elevation="0dp"
+        android:layout_marginTop="5dp"
+        android:transitionName="btnCon_animation"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn_sign"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nouvel Utilisateur ?"
+        app:backgroundTint="@color/teal_200"
+        android:elevation="0dp"
+        android:layout_marginTop="5dp"
+        android:transitionName="btnNU_animation"/>
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="A propos de Adria"
+        app:backgroundTint="@color/purple_500"
+        android:elevation="0dp"
+        android:layout_marginTop="5dp"
+        android:transitionName="btnNU_animation"/>
+
+</LinearLayout>
+</ScrollView>
